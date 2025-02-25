@@ -2,7 +2,7 @@
 //  Calcu1at0rApp.swift
 //  Calcu1at0r
 //
-//  Created by 獨鈷青空 on 2024/07/30.
+//  Created by Aozora Dokko on 2024/07/30.
 //
 
 import SwiftUI

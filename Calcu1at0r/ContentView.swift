@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Calcu1at0r
 //
-//  Created by 獨鈷青空 on 2024/07/30.
+//  Created by Aozora Dokko on 2024/07/30.
 //
 
 import SwiftUI
@@ -24,8 +24,8 @@ struct ContentView: View {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
             VStack(spacing: 10) {
-                // 表示部分
                 HStack {
                     Spacer()
                     Text(displayText)
@@ -35,7 +35,6 @@ struct ContentView: View {
                 }
                 .foregroundColor(.white)
                 
-                // ボタン部分
                 ForEach(buttons, id: \.self) { row in
                     HStack(spacing: 10) {
                         ForEach(row, id: \.self) { button in
