@@ -56,7 +56,7 @@ struct ContentView: View {
         }
     }
     
-    // ボタンの幅を計算するメソッド
+    // ボタンの幅を計算
     func buttonWidth(button: String) -> CGFloat {
         if button == "0" || button == "=" {
             return (UIScreen.main.bounds.width - 50) / 2
@@ -64,15 +64,15 @@ struct ContentView: View {
         return (UIScreen.main.bounds.width - 60) / 4
     }
     
-    // ボタンの高さを計算するメソッド
+    // ボタンの高さを計算
     func buttonHeight() -> CGFloat {
         return (UIScreen.main.bounds.width - 60) / 4
     }
     
-    // ボタンの背景色を設定するメソッド
+    // ボタンの背景色を設定
     func buttonColor(button: String) -> Color {
         if ["AC", "±","÷", "×", "-", "+", "="].contains(button) {
-            return .cyan
+            return Color(red: 0.2, green: 0.68, blue: 0.9)
         } else {
             return .gray
         }
